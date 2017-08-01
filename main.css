@@ -1,0 +1,209 @@
+/* CSS */
+
+/* Global Styles */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+hr {
+    position: relative;
+    border: none;
+}
+
+hr:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: #ccc;
+}
+
+ img {
+    vertical-align: middle;
+}
+
+/* Nav Bar Styles */
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #dadada;
+}
+
+
+.navbar-toggle {
+    border-color: transparent;
+    border: 0px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #16a085;
+	color: white;
+}
+
+
+/* Wrapper and Section Styles */
+
+#home {
+	background: url(../img/flag.jpg) no-repeat center top;
+	margin-top: 50px;
+	padding-top: 50px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 900px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap .box-item {
+    height: 200px;
+}
+#about {
+    background: url(../img/flag.jpg) no-repeat center top;
+    margin-top: 50px;
+    padding-top: 25px;
+    max-height: 100%;
+    width: 100%;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 900px;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color: black;
+    font-weight: 400;
+}
+
+#news {
+    background: url(../img/flag.jpg) no-repeat center top;
+    margin-top: 50px;
+    padding-top: 25px;
+    max-height: 100%;
+    width: 100%;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 900px;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color: black;
+    font-weight: 400;
+}
+
+#news h1 {
+    text-align: center;
+}
+
+#contact {
+    background: url(../img/flag.jpg) no-repeat center top;
+    margin-top: 50px;
+    padding-top: 25px;
+    max-height: 100%;
+    width: 100%;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 900px;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color: black;
+    font-weight: 400;
+}
+}
+
+
+
+/* News display section */
+.jasgrid{padding:0;}
+.box-item {
+    float: left;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border: 1px;
+}
+
+.box-item img {
+    width: 100%;
+}
+.box-item a,span{color:#000;}
+
+.box-item .box-post span.meta {
+    font-family:  sans-serif;
+    font-size: 12px;
+    color: #000;
+    margin-top: 15px;
+    display: block;
+}
+
+.box-item .box-post span.meta span {
+    margin-right: 15px;
+}
+
+.box-item .box-post {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-item .box-post {
+   font-size:10pt;
+}
+
+.post-title {
+    text-align: center;
+    font-size: 20px;
+    position:relative;
+    top: -5px;
+    
+}
