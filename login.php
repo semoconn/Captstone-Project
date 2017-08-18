@@ -28,17 +28,14 @@ if (!$conn) {
 	$res=mysqli_query($conn,$sql);
 	$row=mysqli_fetch_array($res,MYSQLI_ASSOC);
     $count = mysqli_num_rows($res);
-/*	
+
 	$sanupass = password_hash(mysqli_real_escape_string($conn,$_POST['pass']), PASSWORD_DEFAULT);
- if (password_verify($loginpassword,$sanupass)) {
-	 echo 'Password is valid!';} 
-	 
-	 else {    echo 'Invalid password.';}
- */
-    if($row['username']== $loginuser && ($row['password']== $loginpassword)) {
+ 
+    //if($row['username']== $loginuser && ($row['password']== $loginpassword)) {
        // Verify hashed password is correct
 		//	if (password_verify($loignpassword,$row["userpass"])) {
-		
+		 if (password_verify($loginpassword,$row["password"])){
+	
 		$_SESSION['user'] = $loginuser;
 		header("Location:home.php");
 	}

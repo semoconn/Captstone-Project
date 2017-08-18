@@ -45,8 +45,8 @@ if(isset($_POST['btn-postdeal']))
  $Date = filter_var($Date1, FILTER_SANITIZE_STRING);
  $Content = filter_var($Content1, FILTER_SANITIZE_STRING);
  $id = filter_var($id1, FILTER_SANITIZE_STRING);
- $sql = "UPDATE News SET Headline = $Headline, Content = $Content, Date = $Date
-WHERE id= $id";
+ $sql = "UPDATE News SET Headline = '$Headline', Content = '$Content', Date = '$Date'
+WHERE id= '$id'";
  //$conn = mysqli_connect($servername, $username, $password, $dbname);
  
  
